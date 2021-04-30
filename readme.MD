@@ -3,6 +3,10 @@
 Форк [пакета](https://github.com/zholus/symfony-middleware-bundle). Доработано под личные нужды, добавлены
 некоторые стандартные middleware.
 
+## Инсталляция
+
+`composer require proklung/symfony-middleware-bundle`
+
 ## Оригинальная документация
 
 This bundle allow you to create simple middleware that executes right before controller does on each requests.
@@ -10,10 +14,6 @@ This bundle allow you to create simple middleware that executes right before con
 Its almost looks like middleware in laravel framework.
 
 There are 4 possible ways to inject your middleware to your request.
-
-## Installation
-
-`composer require zholus/symfony-middleware:^1`
 
 ## Register middleware
 
