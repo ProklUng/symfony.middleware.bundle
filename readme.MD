@@ -7,6 +7,11 @@
 
 `composer require proklung/symfony-middleware-bundle`
 
+## Кастомные middlewares
+
+1) **OnlyAjaxMiddleware** - проверка на Ajax вызов.
+2) **CsrfMiddleware** - проверка Csrf токена.
+
 ## Оригинальная документация
 
 This bundle allow you to create simple middleware that executes right before controller does on each requests.
