@@ -3,6 +3,8 @@
 Форк [пакета](https://github.com/zholus/symfony-middleware-bundle). Доработано под личные нужды, добавлены
 некоторые стандартные middleware.
 
+## Оригинальная документация
+
 This bundle allow you to create simple middleware that executes right before controller does on each requests.
 
 Its almost looks like middleware in laravel framework.
