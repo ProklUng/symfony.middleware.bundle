@@ -1,0 +1,40 @@
+{
+    "name": "proklung/symfony-middleware-bundle",
+    "description": "MiddlewareBundle for Symfony",
+    "type": "symfony-bundle",
+    "keywords": [
+        "symfony",
+        "symfony-bundle"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gavrilov Fedy",
+            "email": "fedor.gavrilov.75@mail.ru",
+            "homepage": "https://github.com/ProklUng"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ProklUng/symfony.middleware.bundle/issues",
+        "source": "https://github.com/ProklUng/symfony.middleware.bundle"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prokl\\SymfonyMiddlewareBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "Tests/"
+        ]
+    },
+    "require": {
+        "php": ">=7.3",
+        "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
+        "symfony/http-kernel": "^4.0 || ^5.0",
+        "symfony/config": "~4|~5",
+        "symfony/framework-bundle": "^4.0 || ^5.0",
+        "symfony/security-csrf": "^4.0 || ^5.0",
+        "symfony/event-dispatcher": "^4.0 || ^5.0",
+        "proklung/base-exception": "^1.0"
+
+    }
+}
