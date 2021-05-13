@@ -76,7 +76,7 @@ class MiddlewareFacade
             $controllerMetadata->getControllerFqcn()
         );
 
-        $routeMiddlewares = $this->middlewareServiceLocator->getRouteMiddlewares($request->get('_route', ''));
+        $routeMiddlewares = $this->middlewareServiceLocator->getRouteMiddlewares((string)$request->get('_route', ''));
 
         return $this->middlewareMerger->merge(
             $globalMiddlewares,

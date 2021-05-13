@@ -24,6 +24,9 @@ final class RouteMiddlewarePass implements CompilerPassInterface
 
         $def->addMethodCall('addRouteMiddlewares', [new Reference('router.default')]);
 
+        /**
+         * @var string $id
+         */
         foreach ($container->findTaggedServiceIds(MiddlewareEnum::ALIAS_SUFFIX) as $id => $arguments) {
             $container->setAlias($id . MiddlewareEnum::ALIAS_SUFFIX, $id)->setPublic(true);
         }

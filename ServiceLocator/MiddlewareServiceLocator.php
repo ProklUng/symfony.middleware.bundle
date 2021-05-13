@@ -143,7 +143,7 @@ class MiddlewareServiceLocator
     /**
      * @param string $route_name
      *
-     * @return MiddlewareInterface[]
+     * @return array
      */
     public function getRouteMiddlewares(string $route_name): array
     {

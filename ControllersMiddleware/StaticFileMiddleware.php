@@ -102,7 +102,7 @@ class StaticFileMiddleware implements MiddlewareInterface
 
         if ($request->getQueryString()) {
             $target = $request->getQueryString();
-            parse_str($target, $result);
+            parse_str((string)$target, $result);
             $target = (string)$result['file'];
         }
 

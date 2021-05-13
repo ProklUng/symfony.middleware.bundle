@@ -39,11 +39,11 @@ class CsrfMiddleware implements MiddlewareInterface
      */
     public function handle(Request $request): ?Response
     {
-        $typeRequest = $request->server->get('REQUEST_METHOD');
-        $token = $request->query->get('csrf_token');
+        $typeRequest = (string)$request->server->get('REQUEST_METHOD', '');
+        $token = (string)$request->query->get('csrf_token');
 
         if ($typeRequest !== 'GET') {
-            $token = $request->request->get('csrf_token');
+            $token = (string)$request->request->get('csrf_token');
         }
 
         $bValidToken = $this->csrfTokenManager->isTokenValid(

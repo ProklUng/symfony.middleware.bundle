@@ -22,6 +22,9 @@ final class ControllerMiddlewarePass implements CompilerPassInterface
     {
         $def = $container->getDefinition(MiddlewareServiceLocator::class);
 
+        /**
+         * @psalm-suppress MixedAssignment
+         */
         foreach ($container->findTaggedServiceIds(MiddlewareEnum::CONTROLLER_TAG) as $id => $attributes) {
             if (empty($attributes)) {
                 throw new \InvalidArgumentException('Provide at least "middleware" attribute');
